@@ -1509,11 +1509,11 @@
 
     <div class="hero-stats">
       <div class="stat-card">
-        <div class="stat-num">12<span class="accent">V</span></div>
+        <div class="stat-num">22<span class="accent">V</span></div>
         <div class="stat-label">Vittorie stagione</div>
       </div>
       <div class="stat-card">
-        <div class="stat-num">2<span style="color:var(--grigio);font-size:1.5rem">P</span></div>
+        <div class="stat-num">1<span style="color:var(--grigio);font-size:1.5rem">P</span></div>
         <div class="stat-label">Sconfitte stagione</div>
       </div>
       <div class="stat-card">
@@ -1536,6 +1536,12 @@
           <div class="result-score win">3-0</div>
         </div>
         <div class="result-item" data-esito="V" onclick="showPage('reports')">
+          <div class="result-date">08/04/2026</div>
+          <div class="result-opponent">Pio Xi Speranza <span style="font-size:0.72rem;color:var(--grigio)">· casa</span></div>
+          <span class="result-badge badge-vittoria">V</span>
+          <div class="result-score win">3-0</div>
+        </div>
+        <div class="result-item" data-esito="V" onclick="showPage('reports')">
           <div class="result-date">03/04/2026</div>
           <div class="result-opponent">Billa Volley <span style="font-size:0.72rem;color:var(--grigio)">· casa</span></div>
           <span class="result-badge badge-vittoria">V</span>
@@ -1552,12 +1558,6 @@
           <div class="result-opponent">San Michele Magnago <span style="font-size:0.72rem;color:var(--grigio)">· trasferta</span></div>
           <span class="result-badge badge-vittoria">V</span>
           <div class="result-score win">3-1</div>
-        </div>
-        <div class="result-item" data-esito="V" onclick="showPage('reports')">
-          <div class="result-date">04/03/2026</div>
-          <div class="result-opponent">Aquila Azzurra <span style="font-size:0.72rem;color:var(--grigio)">· casa</span></div>
-          <span class="result-badge badge-vittoria">V</span>
-          <div class="result-score win">3-2</div>
         </div>
       </div>
     </div>
@@ -1649,6 +1649,56 @@ const PLAYERS = [
 ];
 
 const MATCHES = [
+  {
+    id:'m_libm1', data:'17/10/2025', avversario:'Gate Orange', casa:true, campionato:'PGS', set:'3-0', parziali:'25-19, 25-14, 25-13', esito:'V',
+    intro:'Giornata 2 del campionato LIBM Girone 4 — AD ASTRA Pegasus vs Gate Orange. Partita disputata al Palestra Falck, Via G. Di Vittorio 1, Cinisello Balsamo.',
+    analisi:'', pagelle:[]
+  },
+  {
+    id:'m_libm2', data:'24/10/2025', avversario:'US Acli Cinisello 2DM', casa:false, campionato:'PGS', set:'3-0', parziali:'14-25, 13-25, 20-25', esito:'V',
+    intro:'Giornata 3 del campionato LIBM Girone 4 — US Acli Cinisello 2DM vs AD ASTRA Pegasus. Partita disputata alla Palestra Scuola Primaria Zandonai, Via Zandonai 17, Cinisello Balsamo.',
+    analisi:'', pagelle:[]
+  },
+  {
+    id:'m_libm3', data:'07/11/2025', avversario:'Black Bulls Volley Cologno', casa:true, campionato:'PGS', set:'3-0', parziali:'25-14, 25-16, 25-19', esito:'V',
+    intro:'Giornata 4 del campionato LIBM Girone 4 — AD ASTRA Pegasus vs Black Bulls Volley Cologno. Partita disputata alla Scuola Via Marzabotto Ang. Via Savona, Sesto San Giovanni.',
+    analisi:'', pagelle:[]
+  },
+  {
+    id:'m_libm4', data:'16/11/2025', avversario:'Martesana Volley Cologno', casa:false, campionato:'PGS', set:'3-0', parziali:'25-20, 25-21, 25-15', esito:'V',
+    intro:'Giornata 5 del campionato LIBM Girone 4 — AD ASTRA Pegasus vs Martesana Volley Cologno. Partita disputata alla Palestra Via Levi B, Via Levi, Cologno Monzese.',
+    analisi:'', pagelle:[]
+  },
+  {
+    id:'m_libm5', data:'21/11/2025', avversario:'ASD Majestic Volley Seregno', casa:true, campionato:'PGS', set:'3-0', parziali:'25-10, 25-7, 25-6', esito:'V',
+    intro:'Giornata 6 del campionato LIBM Girone 4 — AD ASTRA Pegasus vs ASD Majestic Volley Seregno. Partita disputata alla Palestra Falck, Via G. Di Vittorio 1, Cinisello Balsamo.',
+    analisi:'', pagelle:[]
+  },
+  {
+    id:'m_libm6', data:'29/11/2025', avversario:'ASD Majestic Volley Seregno', casa:false, campionato:'PGS', set:'3-0', parziali:'15-25, 7-25, 15-25', esito:'V',
+    intro:'Giornata 1 del campionato LIBM Girone 4 — ASD Majestic Volley Seregno vs AD ASTRA Pegasus. Partita disputata alla Palestra Scuola Media Manzoni, Viale Tiziano 50, Seregno.',
+    analisi:'', pagelle:[]
+  },
+  {
+    id:'m_libm7', data:'04/12/2025', avversario:'Gate Orange', casa:false, campionato:'PGS', set:'3-0', parziali:'9-25, 14-25, 12-25', esito:'V',
+    intro:'Giornata 7 del campionato LIBM Girone 4 — Gate Orange vs AD ASTRA Pegasus. Partita disputata al Cloud Tensostruttura, Viale Enrico Elia 11, Milano.',
+    analisi:'', pagelle:[]
+  },
+  {
+    id:'m_libm8', data:'14/12/2025', avversario:'US Acli Cinisello 2DM', casa:true, campionato:'PGS', set:'3-1', parziali:'25-10, 25-27, 25-17, 25-16', esito:'V',
+    intro:'Giornata 8 del campionato LIBM Girone 4 — AD ASTRA Pegasus vs US Acli Cinisello 2DM. Partita disputata alla Scuola "Marzabotto", Via Marzabotto (angolo Via Savona), Sesto San Giovanni.',
+    analisi:'', pagelle:[]
+  },
+  {
+    id:'m_libm9', data:'20/12/2025', avversario:'Black Bulls Volley Cologno', casa:false, campionato:'PGS', set:'3-2', parziali:'15-25, 9-25, 25-23, 27-25, 12-15', esito:'V',
+    intro:'Giornata 9 del campionato LIBM Girone 4 — Black Bulls Volley Cologno vs AD ASTRA Pegasus. Partita disputata al Pala&Motion, Via Leonardo Da Vinci 1, Cologno Monzese.',
+    analisi:'', pagelle:[]
+  },
+  {
+    id:'m_libm10', data:'11/01/2026', avversario:'Martesana Volley Cologno', casa:true, campionato:'PGS', set:'2-3', parziali:'17-25, 25-19, 18-25, 25-19, 12-15', esito:'S',
+    intro:'Giornata 10 del campionato LIBM Girone 4 — AD ASTRA Pegasus vs Martesana Volley Cologno. Partita disputata alla Scuola "Marzabotto", Via Marzabotto (angolo Via Savona), Sesto San Giovanni.',
+    analisi:'', pagelle:[]
+  },
   {
     id:'m1', data:'31/01/2026', avversario:'Gate Lime', casa:true, campionato:'PGS', set:'3-0', parziali:'25-14, 25-23, 25-17', esito:'V',
     intro:'La marcia dell\'Ad Astra Pegasus non si ferma. Dopo l\'esordio vincente contro Bresso, i ragazzi liquidano la pratica Gate Lime con un netto 3-0. Una partita dai due volti: dominata nel primo e terzo set, combattuta nel secondo. Ricezione di granito all\'78% di positiva di squadra. Gate Lime si suicida con 32 errori punto.',
@@ -1872,7 +1922,6 @@ const MATCHES = [
 
 // ── FUTURE MATCHES ──────────────────────────────────────
 const FUTURE_MATCHES = [
-  { data:'17/04/2026', avversario:'ASD Quarto84', casa:true, campionato:'FIPAV', ora:'21:00' },
   { data:'20/04/2026', avversario:'ASD Geco', casa:true, campionato:'FIPAV', ora:'21:15' },
   { data:'24/04/2026', avversario:'U.S. Pio XI Speranza', casa:false, campionato:'FIPAV', ora:'21:15' },
   { data:'08/05/2026', avversario:'Volley Lucernate Blu', casa:false, campionato:'FIPAV', ora:'21:15' },
